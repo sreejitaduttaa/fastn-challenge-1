@@ -1,13 +1,50 @@
 -- import: fifthtry.github.io/button
 
+-- boolean $show: false
+
+
 -- ftd.column:
 width: fill-container
 align-content: center
-padding.px: 20
-
 
 -- ftd.text: Here are the different sizes of primary buttons available in fastn!!
-padding.px: 60 
+padding.px: 80 
+style: bold 
+text-align: center 
 
+-- ftd.row:
+padding.px: 70
+spacing.fixed.px: 150
+
+
+-- button.button: Click Me!
+role: primary
+extra-large: true
+$on-click$: $ftd.set-bool($a = $show, v = true)
+
+
+
+-- button.button: Click Me!
+role: primary
+large: true
+$on-click$: $ftd.set-bool($a = $show, v = true)
+
+-- button.button: Click Me!
+role: primary
+medium: true
+$on-click$: $ftd.set-bool($a = $show, v = true)
+
+-- button.button: Click Me!
+role: primary
+small: true
+$on-click$: $ftd.set-bool($a = $show, v = true)
+
+-- end: ftd.row
+
+-- ftd.text: Voilà! We've completed challenge 1!
+if: { show }
+style: bold 
+text-align: center 
+padding.px: 50
 
 -- end: ftd.column
